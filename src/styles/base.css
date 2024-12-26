@@ -1,0 +1,85 @@
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 221 21% 17%;
+    --background-inverted: 221 21% 17%;
+    --foreground-inverted: 240 20% 98%;
+
+    --primary: 217 89% 53%;
+    --primary-hover: 220 82% 49%;
+    --primary-active: 222 76% 40%;
+    --primary-background: 209 100% 93%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 0% 100%;
+    --secondary-hover: 228 22% 95%;
+    --secondary-active: 213 18% 90%;
+    --secondary-foreground: 221 21% 17%;
+
+    --muted: 213 18% 90%;
+    --muted-foreground: 222 19% 53%;
+
+    --accent: 198 98% 47%;
+    --accent-background: 204 100% 94%;
+    --accent-foreground: 201 100% 33%;
+
+    --info: 211 98% 60%;
+    --info-background: 208 100% 93%;
+    --info-foreground: 218 82% 48%;
+
+    --success: 122 58% 45%;
+    --success-background: 120 68% 93%;
+    --success-foreground: 122 60% 29%;
+
+    --warning: 47 100% 50%;
+    --warning-background: 57 100% 88%;
+    --warning-foreground: 37 98% 33%;
+
+    --danger: 0 86% 60%;
+    --danger-hover: 0 74% 47%;
+    --danger-active: 0 76% 42%;
+    --danger-background: 0 93% 94%;
+    --danger-foreground: 0 76% 42%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 221 21% 17%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 221 21% 17%;
+
+    --border: 213 18% 90%;
+    --input: 219 19% 86%;
+    --ring: 221 21% 17%;
+    --overlay: 208 100% 97%;
+    --shadow: 221 21% 17%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 221 21% 17%;
+    --foreground: 240 20% 98%;
+
+    --muted: 222 19% 35%;
+    --muted-foreground: 219 19% 86%;
+
+    --card: 221 20% 24%;
+    --card-foreground: 240 20% 98%;
+
+    --popover: 222 19% 35%;
+    --popover-foreground: 240 20% 98%;
+
+    --border: 222 19% 35%;
+    --input: 222 19% 53%;
+    --ring: 240 20% 98%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
