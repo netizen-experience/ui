@@ -71,7 +71,7 @@ export const LinkCharacterLimit: Story = {
 
 export const TotalLengthLimit: Story = {
   render: () => (
-    <Breadcrumb className="w-fit max-w-[50%] ">
+    <Breadcrumb className="w-fit max-w-[50%]">
       <BreadcrumbList className="grid auto-cols-auto grid-flow-col grid-cols-[minmax(auto,_auto)]">
         <BreadcrumbItem className="overflow-hidden">
           <BreadcrumbLink className="truncate" href="/">

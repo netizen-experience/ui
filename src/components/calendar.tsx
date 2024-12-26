@@ -1,9 +1,13 @@
 import { CaretLeft, CaretRight } from "@phosphor-icons/react/dist/ssr";
-import { DayPicker } from "react-day-picker";
+import { type ChevronProps, DayPicker } from "react-day-picker";
 import { cn } from "@/lib/utils";
 import { iconButtonVariants } from "./icon-button";
 
 export type CalendarProps = React.ComponentProps<typeof DayPicker>;
+
+function Chevron(props: ChevronProps) {
+  return props.orientation === "left" ? <CaretLeft size={24} /> : <CaretRight size={24} />;
+}
 
 function Calendar({ className, classNames, showOutsideDays = true, ...props }: CalendarProps) {
   return (
@@ -34,9 +38,7 @@ function Calendar({ className, classNames, showOutsideDays = true, ...props }: C
         hidden: "invisible",
         ...classNames,
       }}
-      components={{
-        Chevron: (props) => (props.orientation === "left" ? <CaretLeft size={24} /> : <CaretRight size={24} />),
-      }}
+      components={{ Chevron }}
       formatters={{ formatWeekdayName: (date) => ["S", "M", "T", "W", "T", "F", "S"][date.getDay()] }}
       {...props}
     />

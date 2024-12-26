@@ -51,7 +51,7 @@ export const Basic: Story = {
             Comments will be visible to all users. Please do not include any sensitive information.
           </SheetDescription>
         </SheetHeader>
-        <div className="text-muted-foreground grow py-8 text-center">
+        <div className="grow py-8 text-center text-muted-foreground">
           <p className="text-sm font-semibold">No comments</p>
           <p className="text-sm">Get started by adding one below.</p>
         </div>

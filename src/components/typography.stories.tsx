@@ -18,19 +18,22 @@ export const Typography: StoryObj = {
         day, his advisors came to him with a problem: the kingdom was running out of money.
       </Paragraph>
       <Heading level={2} className="mt-10">
-        The King's Plan
+        The King&apos;s Plan
       </Heading>
       <Paragraph>
         The king thought long and hard, and finally came up with <Link href="#">a brilliant plan</Link>: he would tax
         the jokes in the kingdom.
       </Paragraph>
       <Blockquote>
-        "After all," he said, "everyone enjoys a good joke, so it's only fair that they should pay for the privilege."
+        &ldquo;After all,&rdquo; he said, &ldquo;everyone enjoys a good joke, so it&apos;s only fair that they should
+        pay for the privilege.&rdquo;
       </Blockquote>
       <Heading level={3} className="mt-8">
         The Joke Tax
       </Heading>
-      <Paragraph>The king's subjects were not amused. They grumbled and complained, but the king was firm:</Paragraph>
+      <Paragraph>
+        The king&apos;s subjects were not amused. They grumbled and complained, but the king was firm:
+      </Paragraph>
       <List className="my-6 ml-6 list-disc [&>li]:mt-2">
         <li>
           1st level of puns: <InlineCode>5</InlineCode> gold coins
@@ -44,22 +47,22 @@ export const Typography: StoryObj = {
       </List>
       <Paragraph>
         As a result, people stopped telling jokes, and the kingdom fell into a gloom. But there was one person who
-        refused to let the king's foolishness get him down: a court jester named Jokester.
+        refused to let the king&apos;s foolishness get him down: a court jester named Jokester.
       </Paragraph>
       <Heading level={3} className="mt-8">
-        Jokester's Revolt
+        Jokester&apos;s Revolt
       </Heading>
       <Paragraph>
         Jokester began sneaking into the castle in the middle of the night and leaving jokes all over the place: under
-        the king's pillow, in his soup, even in the royal toilet. The king was furious, but he couldn't seem to stop
-        Jokester.
+        the king&apos;s pillow, in his soup, even in the royal toilet. The king was furious, but he couldn&apos;t seem
+        to stop Jokester.
       </Paragraph>
       <Paragraph>
         And then, one day, the people of the kingdom discovered that the jokes left by Jokester were so funny that they
-        couldn't help but laugh. And once they started laughing, they couldn't stop.
+        couldn&apos;t help but laugh. And once they started laughing, they couldn&apos;t stop.
       </Paragraph>
       <Heading level={3} className="mt-8">
-        The People's Rebellion
+        The People&apos;s Rebellion
       </Heading>
       <Paragraph>
         The people of the kingdom, feeling uplifted by the laughter, started to tell jokes and puns again, and soon the
@@ -69,8 +72,8 @@ export const Typography: StoryObj = {
         <Table className="w-full">
           <TableHeader>
             <TableRow>
-              <TableHead>King's Treasury</TableHead>
-              <TableHead>People's happiness</TableHead>
+              <TableHead>King&apos;s Treasury</TableHead>
+              <TableHead>People&apos;s happiness</TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>

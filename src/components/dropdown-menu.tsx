@@ -119,7 +119,7 @@ const DropdownMenuCheckboxItem = forwardRef<
     <span
       className={cn(
         "absolute left-2 flex size-4 items-center justify-center rounded-sm border border-input hover:border-primary",
-        checked && "hover:outline-primary-hover/20 border-primary bg-primary hover:outline hover:outline-1",
+        checked && "border-primary bg-primary hover:outline hover:outline-1 hover:outline-primary-hover/20",
       )}
     >
       <DropdownMenuPrimitive.ItemIndicator>

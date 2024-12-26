@@ -6,7 +6,7 @@ import { forwardRef } from "react";
 import { cn } from "@/lib/utils";
 
 const switchVariants = cva(
-  "data-[state=checked]:hover:bg-primary-hover peer inline-flex shrink-0 cursor-pointer items-center rounded-full border-transparent ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring focus-visible:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=unchecked]:bg-neutral-100 data-[state=unchecked]:hover:bg-neutral-200",
+  "peer inline-flex shrink-0 cursor-pointer items-center rounded-full border-transparent ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring focus-visible:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=unchecked]:bg-neutral-100 data-[state=checked]:hover:bg-primary-hover data-[state=unchecked]:hover:bg-neutral-200",
   {
     variants: {
       size: {

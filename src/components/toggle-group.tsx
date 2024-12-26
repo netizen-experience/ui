@@ -13,7 +13,6 @@ const ToggleGroupContext = createContext<VariantProps<typeof toggleVariants>>({
 
 const ToggleGroup = forwardRef<
   React.ElementRef<typeof ToggleGroupPrimitive.Root>,
-  // eslint-disable-next-line @typescript-eslint/no-redundant-type-constituents
   React.ComponentPropsWithoutRef<typeof ToggleGroupPrimitive.Root> & VariantProps<typeof toggleVariants>
 >(({ children, className, size, variant, ...props }, ref) => (
   <ToggleGroupPrimitive.Root
@@ -28,7 +27,6 @@ ToggleGroup.displayName = ToggleGroupPrimitive.Root.displayName;
 
 const ToggleGroupItem = forwardRef<
   React.ElementRef<typeof ToggleGroupPrimitive.Item>,
-  // eslint-disable-next-line @typescript-eslint/no-redundant-type-constituents
   React.ComponentPropsWithoutRef<typeof ToggleGroupPrimitive.Item> & VariantProps<typeof toggleVariants>
 >(({ children, className, size: sizeProp, variant: variantProp, ...props }, ref) => {
   const context = useContext(ToggleGroupContext);

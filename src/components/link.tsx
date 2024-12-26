@@ -3,7 +3,7 @@ import { forwardRef } from "react";
 import { cn } from "@/lib/utils";
 
 const linkVariants = cva(
-  "hover:text-primary-hover active:text-primary-active cursor-pointer rounded text-primary underline underline-offset-4 focus-visible:outline focus-visible:outline-offset-1 focus-visible:outline-ring",
+  "cursor-pointer rounded text-primary underline underline-offset-4 hover:text-primary-hover focus-visible:outline focus-visible:outline-offset-1 focus-visible:outline-ring active:text-primary-active",
 );
 
 export interface LinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {

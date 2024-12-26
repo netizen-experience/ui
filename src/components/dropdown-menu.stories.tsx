@@ -1,4 +1,20 @@
-import { Chat, Cloud, CreditCard, Dog, Envelope, Funnel, Gear, GithubLogo, Keyboard, Lifebuoy, Plus, PlusCircle, Question, SignOut, User, UserPlus, Users } from "@phosphor-icons/react";
+import {
+  Chat,
+  Cloud,
+  CreditCard,
+  Envelope,
+  Funnel,
+  Gear,
+  GithubLogo,
+  Keyboard,
+  Lifebuoy,
+  Plus,
+  PlusCircle,
+  SignOut,
+  User,
+  UserPlus,
+  Users,
+} from "@phosphor-icons/react";
 import type { Meta, StoryObj } from "@storybook/react";
 import { useState } from "react";
 import { Button } from "./button";

@@ -18,11 +18,13 @@ const AvatarGroup = forwardRef<
     {...props}
   />
 ));
+AvatarGroup.displayName = "AvatarGroup";
 
 const AvatarGroupItem = forwardRef<React.ElementRef<typeof Avatar>, React.ComponentPropsWithoutRef<typeof Avatar>>(
   ({ className, ...props }, ref) => (
     <Avatar ref={ref} className={cn("outline outline-2 outline-background", className)} {...props} />
   ),
 );
+AvatarGroupItem.displayName = "AvatarGroupItem";
 
 export { AvatarGroup, AvatarGroupItem };

@@ -1,7 +1,7 @@
 import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
-const notificationBadgeVariants = cva("bg-danger inline-flex items-center transition-colors", {
+const notificationBadgeVariants = cva("inline-flex items-center bg-danger transition-colors", {
   variants: {
     size: {
       sm: "h-4 min-w-4 px-1 text-xs",

@@ -63,8 +63,10 @@ export const WithCustomIconAndColors: Story = {
   },
   render: (props) => (
     <Alert {...props}>
-      <AlertTitle>Custom icon must satisfy the "Icon" type from Phosphor Icons</AlertTitle>
-      <AlertDescription>Provide a background color and text color to customize the alert bar's colors</AlertDescription>
+      <AlertTitle>Custom icon must satisfy the &ldquo;Icon&rdquo; type from Phosphor Icons</AlertTitle>
+      <AlertDescription>
+        Provide a background color and text color to customize the alert bar&apos;s colors
+      </AlertDescription>
     </Alert>
   ),
 };
@@ -90,7 +92,7 @@ export const WithAction: Story = {
   args: { variant: "danger" },
   render: (props) => (
     <Alert {...props}>
-      <AlertTitle>AlertTitle and AlertAction components are "justify-between"</AlertTitle>
+      <AlertTitle>AlertTitle and AlertAction components are &ldquo;justify-between&rdquo;</AlertTitle>
       <AlertAction>Action</AlertAction>
     </Alert>
   ),

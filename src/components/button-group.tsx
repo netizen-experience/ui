@@ -23,6 +23,7 @@ const ButtonGroup = forwardRef<
     <ButtonGroupContext.Provider value={{ variant, size }}>{children}</ButtonGroupContext.Provider>
   </div>
 ));
+ButtonGroup.displayName = "ButtonGroup";
 
 const ButtonGroupItem = forwardRef<
   React.ElementRef<typeof Button>,
@@ -46,6 +47,7 @@ const ButtonGroupItem = forwardRef<
     </Button>
   );
 });
+ButtonGroupItem.displayName = "ButtonGroupItem";
 
 const ButtonGroupIconItem = forwardRef<
   React.ElementRef<typeof IconButton>,
@@ -69,5 +71,6 @@ const ButtonGroupIconItem = forwardRef<
     </IconButton>
   );
 });
+ButtonGroupIconItem.displayName = "ButtonGroupIconItem";
 
 export { ButtonGroup, ButtonGroupItem, ButtonGroupIconItem };

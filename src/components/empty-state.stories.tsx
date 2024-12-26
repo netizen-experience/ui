@@ -36,7 +36,6 @@ export const Basic: Story = {
 };
 
 export const Dashed: Story = {
-  name: "Dashed",
   args: { variant: "dashed" },
   render: (props) => (
     <EmptyState {...props}>

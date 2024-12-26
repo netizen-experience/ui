@@ -21,7 +21,7 @@ const Slider = forwardRef<
     {(value ?? defaultValue ?? []).map((_, index) => (
       <SliderPrimitive.Thumb
         key={index}
-        className="shadow-xs block size-6 rounded-full border-2 border-primary bg-background ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring focus-visible:ring-offset-1 disabled:pointer-events-none disabled:opacity-50"
+        className="block size-6 rounded-full border-2 border-primary bg-background shadow-xs ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring focus-visible:ring-offset-1 disabled:pointer-events-none disabled:opacity-50"
       />
     ))}
   </SliderPrimitive.Root>

@@ -11,9 +11,9 @@ const toggleVariants = cva(
     variants: {
       variant: {
         default:
-          "data-[state=on]:bg-primary-background hover:bg-secondary-hover bg-transparent data-[state=on]:text-primary",
+          "bg-transparent hover:bg-secondary-hover data-[state=on]:bg-primary-background data-[state=on]:text-primary",
         outline:
-          "data-[state=on]:bg-primary-background hover:bg-secondary-hover border border-input bg-transparent data-[state=on]:border-primary",
+          "border border-input bg-transparent hover:bg-secondary-hover data-[state=on]:border-primary data-[state=on]:bg-primary-background",
       },
       size: {
         sm: "h-8 px-3 [&>svg]:size-5",

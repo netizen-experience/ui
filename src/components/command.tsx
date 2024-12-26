@@ -41,6 +41,7 @@ const CommandInput = forwardRef<
   React.ElementRef<typeof CommandPrimitive.Input>,
   React.ComponentPropsWithoutRef<typeof CommandPrimitive.Input>
 >(({ className, ...props }, ref) => (
+  // eslint-disable-next-line react/no-unknown-property -- `cmdk-input-wrapper` is used for styling purposes in `CommandDialog` component
   <div className="flex items-center border-b px-3" cmdk-input-wrapper="">
     <MagnifyingGlass size={16} className="mr-2 shrink-0 opacity-50" />
     <CommandPrimitive.Input

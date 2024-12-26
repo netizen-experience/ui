@@ -37,7 +37,9 @@ export const Basic: Story = {
         <DialogFooter>
           <Button
             onClick={() => {
-              navigator.clipboard.writeText("V6GLQEWZ2GOB");
+              void (async () => {
+                await navigator.clipboard.writeText("V6GLQEWZ2GOB");
+              })();
             }}
           >
             Copy link

@@ -80,19 +80,19 @@ export const WithDropdown: Story = {
         <DropdownMenuContent align="start" className="min-w-[240px]">
           <DropdownMenuItem>
             <DropdownMenuItemIcon>
-            <ShareFat />
+              <ShareFat />
             </DropdownMenuItemIcon>
             <span>Share</span>
           </DropdownMenuItem>
           <DropdownMenuItem>
             <DropdownMenuItemIcon>
-            <Bell />
+              <Bell />
             </DropdownMenuItemIcon>
             <span>Subscribe</span>
           </DropdownMenuItem>
           <DropdownMenuItem>
             <DropdownMenuItemIcon>
-            <LinkSimple />
+              <LinkSimple />
             </DropdownMenuItemIcon>
             <span>Copy link</span>
           </DropdownMenuItem>
