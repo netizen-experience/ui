@@ -39,11 +39,10 @@
     "lint": "eslint --fix .",
     "format": "prettier --write .",
     "dev": "storybook dev -p 6006",
-    "build": "vite build",
-    "build-storybook": "storybook build",
-    "preview-storybook": "npx http-server storybook-static",
-    "build-infra": "cdk synth --all",
-    "deploy-infra": "cdk deploy --all"
+    "build:lib": "vite build",
+    "build:storybook": "storybook build",
+    "build:infra": "cdk synth --all",
+    "deploy:infra": "cdk deploy --all"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.1",
