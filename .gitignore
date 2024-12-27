@@ -22,6 +22,10 @@ node_modules
 *.sln
 *.sw?
 
+# Environment variables
+**/.env*
+
 # Build files
 *storybook.log
 storybook-static
+cdk.out
