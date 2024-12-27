@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+const mizuPreset = {
   darkMode: "class",
   theme: {
     screens: {
@@ -251,3 +251,5 @@ export default {
   },
   plugins: [require("tailwindcss-animate")],
 };
+
+export default mizuPreset;
