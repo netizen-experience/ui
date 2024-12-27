@@ -20,7 +20,8 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true,
+    // TODO: Enable this when `vite-plugin-dts` supports TypeScript 5.6 [https://github.com/qmhc/vite-plugin-dts/issues/395]
+    // "noUncheckedSideEffectImports": true,
 
     /* Path alias */
     "baseUrl": ".",

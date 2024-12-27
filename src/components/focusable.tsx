@@ -13,6 +13,5 @@ function Focusable({ className, ...props }: React.HTMLAttributes<HTMLElement>) {
     />
   );
 }
-Focusable.displayName = "Focusable";
 
 export { Focusable };

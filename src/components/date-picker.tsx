@@ -26,6 +26,5 @@ function DatePicker({ disabled, disabledDays, value, ...props }: DatePickerProps
     </Popover>
   );
 }
-DatePicker.displayName = "DatePicker";
 
 export { DatePicker };

@@ -1,5 +1,5 @@
 import path from "path";
-import mizuPreset from "./tailwind.preset";
+import mizuPreset from "./src/styles/preset";
 
 /** @type {import('tailwindcss').Config} */
 export default {
