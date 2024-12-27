@@ -20,7 +20,7 @@ export default tseslint.config(
       ecmaVersion: "latest",
       globals: globals.browser,
       parserOptions: {
-        project: ["./tsconfig.node.json", "./tsconfig.app.json", "./tsconfig.infra.json"],
+        project: ["./tsconfig.node.json", "./tsconfig.lib.json", "./tsconfig.infra.json"],
         tsconfigRootDir: import.meta.dirname,
       },
     },

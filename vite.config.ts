@@ -45,7 +45,7 @@ export default defineConfig({
     react(),
     dts({
       rollupTypes: true,
-      tsconfigPath: "./tsconfig.app.json",
+      tsconfigPath: "./tsconfig.lib.json",
       exclude: ["./src/components/**/*.stories.tsx"],
     }),
   ],
