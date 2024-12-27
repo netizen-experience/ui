@@ -1,9 +1,7 @@
-import path from "path";
 import { CfnOutput, Stack } from "aws-cdk-lib";
 import * as cloudfront from "aws-cdk-lib/aws-cloudfront";
 import * as origins from "aws-cdk-lib/aws-cloudfront-origins";
 import * as s3 from "aws-cdk-lib/aws-s3";
-import * as s3deploy from "aws-cdk-lib/aws-s3-deployment";
 import { Construct } from "constructs";
 
 export class UiStack extends Stack {
@@ -15,10 +13,6 @@ export class UiStack extends Stack {
       accessControl: s3.BucketAccessControl.PRIVATE,
     });
     bucket.grantRead(originAccessIdentity);
-    new s3deploy.BucketDeployment(this, "StaticSiteDeployment", {
-      sources: [s3deploy.Source.asset(path.resolve(import.meta.dirname, "../../storybook-static"))],
-      destinationBucket: bucket,
-    });
 
     const origin = origins.S3BucketOrigin.withOriginAccessIdentity(bucket, { originAccessIdentity });
     const distribution = new cloudfront.Distribution(this, "Distribution", {
@@ -39,6 +33,7 @@ export class UiStack extends Stack {
       ],
     });
 
+    new CfnOutput(this, "BucketName", { value: bucket.bucketName });
     new CfnOutput(this, "DistributionDomainName", { value: distribution.distributionDomainName });
   }
 }

@@ -13,5 +13,5 @@ if (process.env.AWS_PROFILE) console.log(`AWS_PROFILE: ${process.env.AWS_PROFILE
 console.log(`CDK deployment account: ${account}`);
 console.log(`CDK deployment region : ${region}`);
 
-new UiStack(app, "Ui");
-cdk.Tags.of(app).add("project", "ui");
+new UiStack(app, "NetizenUi");
+cdk.Tags.of(app).add("project", "netizen");
