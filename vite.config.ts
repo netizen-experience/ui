@@ -31,6 +31,7 @@ export default defineConfig({
     rollupOptions: {
       external: [
         ...Object.keys(packageJson.dependencies),
+        ...Object.keys(packageJson.peerDependencies),
         /@phosphor-icons\/react*/,
         "react/jsx-runtime",
         "react-dom/client",
