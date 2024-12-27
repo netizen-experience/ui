@@ -3,7 +3,7 @@ import { DialogProps } from '@radix-ui/react-dialog';
 import { ForwardRefExoticComponent } from 'react';
 import { HTMLAttributes } from 'react';
 import { InputHTMLAttributes } from 'react';
-import { JSX as JSX_2 } from 'react/jsx-runtime';
+import { JSX } from 'react/jsx-runtime';
 import { RefAttributes } from 'react';
 
 export declare const Command: ForwardRefExoticComponent<Omit<{
@@ -25,7 +25,7 @@ vimBindings?: boolean;
 } & RefAttributes<HTMLDivElement>, "ref"> & RefAttributes<HTMLDivElement>>;
 
 export declare const CommandDialog: {
-    ({ children, ...props }: CommandDialogProps): JSX_2.Element;
+    ({ children, ...props }: CommandDialogProps): JSX.Element;
     displayName: string;
 };
 
@@ -104,23 +104,8 @@ alwaysRender?: boolean;
 } & RefAttributes<HTMLDivElement>, "ref"> & RefAttributes<HTMLDivElement>>;
 
 export declare const CommandShortcut: {
-    ({ className, ...props }: React.HTMLAttributes<HTMLSpanElement>): JSX_2.Element;
+    ({ className, ...props }: React.HTMLAttributes<HTMLSpanElement>): JSX.Element;
     displayName: string;
 };
 
 export { }
-
-
-declare namespace Focusable {
-    var displayName: string;
-}
-
-
-declare namespace DatePicker {
-    var displayName: string;
-}
-
-
-declare namespace Calendar {
-    var displayName: string;
-}

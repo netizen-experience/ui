@@ -10,18 +10,3 @@ export declare const HoverCardContent: ForwardRefExoticComponent<Omit<HoverCardP
 export declare const HoverCardTrigger: ForwardRefExoticComponent<HoverCardPrimitive.HoverCardTriggerProps & RefAttributes<HTMLAnchorElement>>;
 
 export { }
-
-
-declare namespace Focusable {
-    var displayName: string;
-}
-
-
-declare namespace DatePicker {
-    var displayName: string;
-}
-
-
-declare namespace Calendar {
-    var displayName: string;
-}

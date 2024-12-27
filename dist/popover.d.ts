@@ -12,18 +12,3 @@ export declare const PopoverContent: ForwardRefExoticComponent<Omit<PopoverPrimi
 export declare const PopoverTrigger: ForwardRefExoticComponent<PopoverPrimitive.PopoverTriggerProps & RefAttributes<HTMLButtonElement>>;
 
 export { }
-
-
-declare namespace Focusable {
-    var displayName: string;
-}
-
-
-declare namespace DatePicker {
-    var displayName: string;
-}
-
-
-declare namespace Calendar {
-    var displayName: string;
-}

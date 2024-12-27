@@ -2,7 +2,7 @@ import * as AlertDialogPrimitive from '@radix-ui/react-alert-dialog';
 import { ClassProp } from 'class-variance-authority/types';
 import { FC } from 'react';
 import { ForwardRefExoticComponent } from 'react';
-import { JSX as JSX_2 } from 'react/jsx-runtime';
+import { JSX } from 'react/jsx-runtime';
 import { RefAttributes } from 'react';
 import { VariantProps } from 'class-variance-authority';
 
@@ -23,12 +23,12 @@ export declare const AlertDialogContent: ForwardRefExoticComponent<Omit<AlertDia
 export declare const AlertDialogDescription: ForwardRefExoticComponent<Omit<AlertDialogPrimitive.AlertDialogDescriptionProps & RefAttributes<HTMLParagraphElement>, "ref"> & RefAttributes<HTMLParagraphElement>>;
 
 export declare const AlertDialogFooter: {
-    ({ className, ...props }: React.HTMLAttributes<HTMLDivElement>): JSX_2.Element;
+    ({ className, ...props }: React.HTMLAttributes<HTMLDivElement>): JSX.Element;
     displayName: string;
 };
 
 export declare const AlertDialogHeader: {
-    ({ className, ...props }: React.HTMLAttributes<HTMLDivElement>): JSX_2.Element;
+    ({ className, ...props }: React.HTMLAttributes<HTMLDivElement>): JSX.Element;
     displayName: string;
 };
 
@@ -41,18 +41,3 @@ export declare const AlertDialogTitle: ForwardRefExoticComponent<Omit<AlertDialo
 export declare const AlertDialogTrigger: ForwardRefExoticComponent<AlertDialogPrimitive.AlertDialogTriggerProps & RefAttributes<HTMLButtonElement>>;
 
 export { }
-
-
-declare namespace Focusable {
-    var displayName: string;
-}
-
-
-declare namespace DatePicker {
-    var displayName: string;
-}
-
-
-declare namespace Calendar {
-    var displayName: string;
-}

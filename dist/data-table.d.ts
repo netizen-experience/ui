@@ -1,7 +1,7 @@
 import { ColumnDef } from '@tanstack/react-table';
-import { JSX as JSX_2 } from 'react/jsx-runtime';
+import { JSX } from 'react/jsx-runtime';
 
-export declare function DataTable<TData, TValue>({ columns, data, emptyText }: DataTableProps<TData, TValue>): JSX_2.Element;
+export declare function DataTable<TData, TValue>({ columns, data, emptyText }: DataTableProps<TData, TValue>): JSX.Element;
 
 declare interface DataTableProps<TData, TValue> {
     columns: ColumnDef<TData, TValue>[];
@@ -10,18 +10,3 @@ declare interface DataTableProps<TData, TValue> {
 }
 
 export { }
-
-
-declare namespace Focusable {
-    var displayName: string;
-}
-
-
-declare namespace DatePicker {
-    var displayName: string;
-}
-
-
-declare namespace Calendar {
-    var displayName: string;
-}

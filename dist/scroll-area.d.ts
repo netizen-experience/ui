@@ -11,18 +11,3 @@ declare interface ScrollAreaProps extends React.ComponentPropsWithoutRef<typeof 
 export declare const ScrollBar: ForwardRefExoticComponent<Omit<ScrollAreaPrimitive.ScrollAreaScrollbarProps & RefAttributes<HTMLDivElement>, "ref"> & RefAttributes<HTMLDivElement>>;
 
 export { }
-
-
-declare namespace Focusable {
-    var displayName: string;
-}
-
-
-declare namespace DatePicker {
-    var displayName: string;
-}
-
-
-declare namespace Calendar {
-    var displayName: string;
-}

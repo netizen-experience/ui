@@ -13,18 +13,3 @@ size?: "sm" | "md" | null | undefined;
 } & ClassProp) | undefined) => string> & RefAttributes<HTMLButtonElement>>;
 
 export { }
-
-
-declare namespace Focusable {
-    var displayName: string;
-}
-
-
-declare namespace DatePicker {
-    var displayName: string;
-}
-
-
-declare namespace Calendar {
-    var displayName: string;
-}

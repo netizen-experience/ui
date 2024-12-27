@@ -11,18 +11,3 @@ export declare const AccordionItem: ForwardRefExoticComponent<Omit<AccordionPrim
 export declare const AccordionTrigger: ForwardRefExoticComponent<Omit<AccordionPrimitive.AccordionTriggerProps & RefAttributes<HTMLButtonElement>, "ref"> & RefAttributes<HTMLButtonElement>>;
 
 export { }
-
-
-declare namespace Focusable {
-    var displayName: string;
-}
-
-
-declare namespace DatePicker {
-    var displayName: string;
-}
-
-
-declare namespace Calendar {
-    var displayName: string;
-}

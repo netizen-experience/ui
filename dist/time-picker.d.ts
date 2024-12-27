@@ -1,6 +1,6 @@
-import { JSX as JSX_2 } from 'react/jsx-runtime';
+import { JSX } from 'react/jsx-runtime';
 
-export declare const TimePicker: ({ className, defaultValue, endTime, interval, notFoundMessage, onSelect, placeholder, searchPlaceholder, startTime, }: TimePickerProps) => JSX_2.Element;
+export declare const TimePicker: ({ className, defaultValue, endTime, interval, notFoundMessage, onSelect, placeholder, searchPlaceholder, startTime, }: TimePickerProps) => JSX.Element;
 
 export declare interface TimePickerProps {
     /** Format: `HHmm` */
@@ -23,18 +23,3 @@ export declare interface TimePickerValue {
 }
 
 export { }
-
-
-declare namespace Focusable {
-    var displayName: string;
-}
-
-
-declare namespace DatePicker {
-    var displayName: string;
-}
-
-
-declare namespace Calendar {
-    var displayName: string;
-}

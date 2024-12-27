@@ -6,18 +6,3 @@ export declare const Textarea: ForwardRefExoticComponent<TextareaProps & RefAttr
 export declare type TextareaProps = React.TextareaHTMLAttributes<HTMLTextAreaElement>;
 
 export { }
-
-
-declare namespace Focusable {
-    var displayName: string;
-}
-
-
-declare namespace DatePicker {
-    var displayName: string;
-}
-
-
-declare namespace Calendar {
-    var displayName: string;
-}

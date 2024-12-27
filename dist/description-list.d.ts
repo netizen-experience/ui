@@ -11,18 +11,3 @@ export declare const DescriptionListItem: ForwardRefExoticComponent<HTMLAttribut
 export declare const DescriptionListTerm: ForwardRefExoticComponent<HTMLAttributes<HTMLElement> & RefAttributes<HTMLElement>>;
 
 export { }
-
-
-declare namespace Focusable {
-    var displayName: string;
-}
-
-
-declare namespace DatePicker {
-    var displayName: string;
-}
-
-
-declare namespace Calendar {
-    var displayName: string;
-}

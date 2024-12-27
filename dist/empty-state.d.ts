@@ -3,7 +3,7 @@ import { ClassProp } from 'class-variance-authority/types';
 import { ForwardRefExoticComponent } from 'react';
 import { HTMLAttributes } from 'react';
 import { Icon } from '@phosphor-icons/react';
-import { JSX as JSX_2 } from 'react/jsx-runtime';
+import { JSX } from 'react/jsx-runtime';
 import { RefAttributes } from 'react';
 import { VariantProps } from 'class-variance-authority';
 
@@ -29,7 +29,7 @@ export declare const EmptyStateDescription: ForwardRefExoticComponent<HTMLAttrib
 export declare const EmptyStateIcon: {
     ({ children, className, ...props }: React.HTMLAttributes<HTMLElement> & {
         children: React.ReactElement<Icon>;
-    }): JSX_2.Element;
+    }): JSX.Element;
     displayName: string;
 };
 
@@ -40,18 +40,3 @@ export declare const emptyStateVariants: (props?: ({
 } & ClassProp) | undefined) => string;
 
 export { }
-
-
-declare namespace Focusable {
-    var displayName: string;
-}
-
-
-declare namespace DatePicker {
-    var displayName: string;
-}
-
-
-declare namespace Calendar {
-    var displayName: string;
-}

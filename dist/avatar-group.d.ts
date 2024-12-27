@@ -10,18 +10,3 @@ overlapDirection?: "ltr" | "rtl";
 export declare const AvatarGroupItem: ForwardRefExoticComponent<Omit<Omit<AvatarProps & RefAttributes<HTMLSpanElement>, "ref"> & RefAttributes<HTMLSpanElement>, "ref"> & RefAttributes<HTMLSpanElement>>;
 
 export { }
-
-
-declare namespace Focusable {
-    var displayName: string;
-}
-
-
-declare namespace DatePicker {
-    var displayName: string;
-}
-
-
-declare namespace Calendar {
-    var displayName: string;
-}

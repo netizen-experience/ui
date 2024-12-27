@@ -2,7 +2,7 @@ import * as DropdownMenuPrimitive from '@radix-ui/react-dropdown-menu';
 import { FC } from 'react';
 import { ForwardRefExoticComponent } from 'react';
 import { Icon } from '@phosphor-icons/react';
-import { JSX as JSX_2 } from 'react/jsx-runtime';
+import { JSX } from 'react/jsx-runtime';
 import { RefAttributes } from 'react';
 
 export declare const DropdownMenu: FC<DropdownMenuPrimitive.DropdownMenuProps>;
@@ -20,7 +20,7 @@ inset?: boolean;
 export declare const DropdownMenuItemIcon: {
     ({ children, className, ...props }: React.HTMLAttributes<HTMLElement> & {
         children: React.ReactElement<Icon>;
-    }): JSX_2.Element;
+    }): JSX.Element;
     displayName: string;
 };
 
@@ -37,7 +37,7 @@ export declare const DropdownMenuRadioItem: ForwardRefExoticComponent<Omit<Dropd
 export declare const DropdownMenuSeparator: ForwardRefExoticComponent<Omit<DropdownMenuPrimitive.DropdownMenuSeparatorProps & RefAttributes<HTMLDivElement>, "ref"> & RefAttributes<HTMLDivElement>>;
 
 export declare const DropdownMenuShortcut: {
-    ({ className, ...props }: React.HTMLAttributes<HTMLSpanElement>): JSX_2.Element;
+    ({ className, ...props }: React.HTMLAttributes<HTMLSpanElement>): JSX.Element;
     displayName: string;
 };
 
@@ -52,18 +52,3 @@ inset?: boolean;
 export declare const DropdownMenuTrigger: ForwardRefExoticComponent<DropdownMenuPrimitive.DropdownMenuTriggerProps & RefAttributes<HTMLButtonElement>>;
 
 export { }
-
-
-declare namespace Focusable {
-    var displayName: string;
-}
-
-
-declare namespace DatePicker {
-    var displayName: string;
-}
-
-
-declare namespace Calendar {
-    var displayName: string;
-}

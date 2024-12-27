@@ -2,7 +2,7 @@ import { AnchorHTMLAttributes } from 'react';
 import { DetailedHTMLProps } from 'react';
 import { ForwardRefExoticComponent } from 'react';
 import { HTMLAttributes } from 'react';
-import { JSX as JSX_2 } from 'react/jsx-runtime';
+import { JSX } from 'react/jsx-runtime';
 import { LiHTMLAttributes } from 'react';
 import { OlHTMLAttributes } from 'react';
 import { RefAttributes } from 'react';
@@ -12,7 +12,7 @@ separator?: React.ReactNode;
 } & RefAttributes<HTMLElement>>;
 
 export declare const BreadcrumbEllipsis: {
-    ({ className, ...props }: React.ComponentProps<"span">): JSX_2.Element;
+    ({ className, ...props }: React.ComponentProps<"span">): JSX.Element;
     displayName: string;
 };
 
@@ -27,23 +27,8 @@ export declare const BreadcrumbList: ForwardRefExoticComponent<Omit<DetailedHTML
 export declare const BreadcrumbPage: ForwardRefExoticComponent<Omit<DetailedHTMLProps<HTMLAttributes<HTMLSpanElement>, HTMLSpanElement>, "ref"> & RefAttributes<HTMLSpanElement>>;
 
 export declare const BreadcrumbSeparator: {
-    ({ children, className, ...props }: React.ComponentProps<"li">): JSX_2.Element;
+    ({ children, className, ...props }: React.ComponentProps<"li">): JSX.Element;
     displayName: string;
 };
 
 export { }
-
-
-declare namespace Focusable {
-    var displayName: string;
-}
-
-
-declare namespace DatePicker {
-    var displayName: string;
-}
-
-
-declare namespace Calendar {
-    var displayName: string;
-}

@@ -1,5 +1,5 @@
 import * as DialogPrimitive from '@radix-ui/react-dialog';
-import { JSX as JSX_2 } from 'react/jsx-runtime';
+import { JSX } from 'react/jsx-runtime';
 import * as React_2 from 'react';
 
 export declare const Dialog: React_2.FC<DialogPrimitive.DialogProps>;
@@ -11,12 +11,12 @@ export declare const DialogContent: React_2.ForwardRefExoticComponent<Omit<Dialo
 export declare const DialogDescription: React_2.ForwardRefExoticComponent<Omit<DialogPrimitive.DialogDescriptionProps & React_2.RefAttributes<HTMLParagraphElement>, "ref"> & React_2.RefAttributes<HTMLParagraphElement>>;
 
 export declare const DialogFooter: {
-    ({ className, ...props }: React_2.HTMLAttributes<HTMLDivElement>): JSX_2.Element;
+    ({ className, ...props }: React_2.HTMLAttributes<HTMLDivElement>): JSX.Element;
     displayName: string;
 };
 
 export declare const DialogHeader: {
-    ({ className, ...props }: React_2.HTMLAttributes<HTMLDivElement>): JSX_2.Element;
+    ({ className, ...props }: React_2.HTMLAttributes<HTMLDivElement>): JSX.Element;
     displayName: string;
 };
 
@@ -29,18 +29,3 @@ export declare const DialogTitle: React_2.ForwardRefExoticComponent<Omit<DialogP
 export declare const DialogTrigger: React_2.ForwardRefExoticComponent<DialogPrimitive.DialogTriggerProps & React_2.RefAttributes<HTMLButtonElement>>;
 
 export { }
-
-
-declare namespace Focusable {
-    var displayName: string;
-}
-
-
-declare namespace DatePicker {
-    var displayName: string;
-}
-
-
-declare namespace Calendar {
-    var displayName: string;
-}

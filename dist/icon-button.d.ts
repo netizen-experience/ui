@@ -20,18 +20,3 @@ export declare interface IconButtonProps extends ButtonProps, VariantProps<typeo
 export declare const iconButtonVariants: (props?: VariantProps<typeof buttonVariants>) => string;
 
 export { }
-
-
-declare namespace Focusable {
-    var displayName: string;
-}
-
-
-declare namespace DatePicker {
-    var displayName: string;
-}
-
-
-declare namespace Calendar {
-    var displayName: string;
-}

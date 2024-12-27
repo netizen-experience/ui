@@ -8,18 +8,3 @@ export declare const Checkbox: React_2.ForwardRefExoticComponent<Omit<CheckboxPr
 } & ClassProp) | undefined) => string> & React_2.RefAttributes<HTMLButtonElement>>;
 
 export { }
-
-
-declare namespace Focusable {
-    var displayName: string;
-}
-
-
-declare namespace DatePicker {
-    var displayName: string;
-}
-
-
-declare namespace Calendar {
-    var displayName: string;
-}

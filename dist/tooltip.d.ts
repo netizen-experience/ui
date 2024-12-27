@@ -14,18 +14,3 @@ export declare const TooltipProvider: FC<TooltipPrimitive.TooltipProviderProps>;
 export declare const TooltipTrigger: ForwardRefExoticComponent<TooltipPrimitive.TooltipTriggerProps & RefAttributes<HTMLButtonElement>>;
 
 export { }
-
-
-declare namespace Focusable {
-    var displayName: string;
-}
-
-
-declare namespace DatePicker {
-    var displayName: string;
-}
-
-
-declare namespace Calendar {
-    var displayName: string;
-}

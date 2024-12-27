@@ -1,6 +1,6 @@
 import { Action } from 'sonner';
 import { ExternalToast } from 'sonner';
-import { JSX as JSX_2 } from 'react/jsx-runtime';
+import { JSX } from 'react/jsx-runtime';
 import { ReactNode } from 'react';
 import { ToastClassnames } from 'sonner';
 import { Toaster as Toaster_2 } from 'sonner';
@@ -18,9 +18,8 @@ export declare const toast: ((message: ReactNode | (() => React.ReactNode), data
     message: (message: (ReactNode | (() => React.ReactNode)) | React.ReactNode, data?: ExternalToast) => string | number;
     promise: <ToastData>(promise: Promise<ToastData> | (() => Promise<ToastData>), data?: {
         className?: string | undefined;
-        id?: (number | string) | undefined;
+        id?: number | string | undefined;
         style?: React.CSSProperties | undefined;
-        action?: Action | React.ReactNode;
         onDismiss?: ((toast: ToastT) => void) | undefined;
         invert?: boolean | undefined;
         position?: ("top-left" | "top-right" | "bottom-left" | "bottom-right" | "top-center" | "bottom-center") | undefined;
@@ -28,9 +27,10 @@ export declare const toast: ((message: ReactNode | (() => React.ReactNode), data
         duration?: number | undefined;
         closeButton?: boolean | undefined;
         unstyled?: boolean | undefined;
-        icon?: React.ReactNode;
+        icon?: ReactNode;
         dismissible?: boolean | undefined;
-        cancel?: Action | React.ReactNode;
+        action?: ReactNode | Action;
+        cancel?: ReactNode | Action;
         onAutoClose?: ((toast: ToastT) => void) | undefined;
         cancelButtonStyle?: React.CSSProperties | undefined;
         actionButtonStyle?: React.CSSProperties | undefined;
@@ -55,23 +55,8 @@ export declare const toast: ((message: ReactNode | (() => React.ReactNode), data
     getHistory: () => (ToastT | ToastToDismiss)[];
 };
 
-export declare const Toaster: ({ ...props }: ToasterProps) => JSX_2.Element;
+export declare const Toaster: ({ ...props }: ToasterProps) => JSX.Element;
 
 declare type ToasterProps = React.ComponentProps<typeof Toaster_2>;
 
 export { }
-
-
-declare namespace Focusable {
-    var displayName: string;
-}
-
-
-declare namespace DatePicker {
-    var displayName: string;
-}
-
-
-declare namespace Calendar {
-    var displayName: string;
-}

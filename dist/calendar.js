@@ -6,7 +6,7 @@ import { iconButtonVariants as r } from "./icon-button.js";
 function u(e) {
   return e.orientation === "left" ? /* @__PURE__ */ o(d, { size: 24 }) : /* @__PURE__ */ o(m, { size: 24 });
 }
-function p({ className: e, classNames: a, showOutsideDays: n = !0, ...i }) {
+function y({ className: e, classNames: a, showOutsideDays: n = !0, ...i }) {
   return /* @__PURE__ */ o(
     l,
     {
@@ -40,7 +40,6 @@ function p({ className: e, classNames: a, showOutsideDays: n = !0, ...i }) {
     }
   );
 }
-p.displayName = "Calendar";
 export {
-  p as Calendar
+  y as Calendar
 };

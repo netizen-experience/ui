@@ -9,18 +9,3 @@ export declare const AvatarFallback: ForwardRefExoticComponent<Omit<AvatarPrimit
 export declare const AvatarImage: ForwardRefExoticComponent<Omit<AvatarPrimitive.AvatarImageProps & RefAttributes<HTMLImageElement>, "ref"> & RefAttributes<HTMLImageElement>>;
 
 export { }
-
-
-declare namespace Focusable {
-    var displayName: string;
-}
-
-
-declare namespace DatePicker {
-    var displayName: string;
-}
-
-
-declare namespace Calendar {
-    var displayName: string;
-}

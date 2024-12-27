@@ -5,7 +5,7 @@ import { FieldValues } from 'react-hook-form';
 import { FormProviderProps } from 'react-hook-form';
 import { ForwardRefExoticComponent } from 'react';
 import { HTMLAttributes } from 'react';
-import { JSX as JSX_2 } from 'react/jsx-runtime';
+import { JSX } from 'react/jsx-runtime';
 import * as LabelPrimitive from '@radix-ui/react-label';
 import { RefAttributes } from 'react';
 import { SlotProps } from '@radix-ui/react-slot';
@@ -16,7 +16,7 @@ export declare const FormControl: ForwardRefExoticComponent<Omit<SlotProps & Ref
 
 export declare const FormDescription: ForwardRefExoticComponent<HTMLAttributes<HTMLParagraphElement> & RefAttributes<HTMLParagraphElement>>;
 
-export declare const FormField: <TFieldValues extends FieldValues = FieldValues, TName extends FieldPath<TFieldValues> = FieldPath<TFieldValues>>({ ...props }: ControllerProps<TFieldValues, TName>) => JSX_2.Element;
+export declare const FormField: <TFieldValues extends FieldValues = FieldValues, TName extends FieldPath<TFieldValues> = FieldPath<TFieldValues>>({ ...props }: ControllerProps<TFieldValues, TName>) => JSX.Element;
 
 export declare const FormItem: ForwardRefExoticComponent<HTMLAttributes<HTMLDivElement> & RefAttributes<HTMLDivElement>>;
 
@@ -38,18 +38,3 @@ export declare const useFormField: () => {
 };
 
 export { }
-
-
-declare namespace Focusable {
-    var displayName: string;
-}
-
-
-declare namespace DatePicker {
-    var displayName: string;
-}
-
-
-declare namespace Calendar {
-    var displayName: string;
-}

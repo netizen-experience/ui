@@ -1,7 +1,7 @@
 import { ClassProp } from 'class-variance-authority/types';
 import { FC } from 'react';
 import { ForwardRefExoticComponent } from 'react';
-import { JSX as JSX_2 } from 'react/jsx-runtime';
+import { JSX } from 'react/jsx-runtime';
 import { RefAttributes } from 'react';
 import * as SheetPrimitive from '@radix-ui/react-dialog';
 import { VariantProps } from 'class-variance-authority';
@@ -21,12 +21,12 @@ declare interface SheetContentProps extends React.ComponentPropsWithoutRef<typeo
 export declare const SheetDescription: ForwardRefExoticComponent<Omit<SheetPrimitive.DialogDescriptionProps & RefAttributes<HTMLParagraphElement>, "ref"> & RefAttributes<HTMLParagraphElement>>;
 
 export declare const SheetFooter: {
-    ({ className, ...props }: React.HTMLAttributes<HTMLDivElement>): JSX_2.Element;
+    ({ className, ...props }: React.HTMLAttributes<HTMLDivElement>): JSX.Element;
     displayName: string;
 };
 
 export declare const SheetHeader: {
-    ({ className, ...props }: React.HTMLAttributes<HTMLDivElement>): JSX_2.Element;
+    ({ className, ...props }: React.HTMLAttributes<HTMLDivElement>): JSX.Element;
     displayName: string;
 };
 
@@ -43,18 +43,3 @@ export declare const sheetVariants: (props?: ({
 } & ClassProp) | undefined) => string;
 
 export { }
-
-
-declare namespace Focusable {
-    var displayName: string;
-}
-
-
-declare namespace DatePicker {
-    var displayName: string;
-}
-
-
-declare namespace Calendar {
-    var displayName: string;
-}

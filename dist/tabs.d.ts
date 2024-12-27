@@ -1,7 +1,7 @@
 import { ClassProp } from 'class-variance-authority/types';
 import { ForwardRefExoticComponent } from 'react';
 import { Icon } from '@phosphor-icons/react';
-import { JSX as JSX_2 } from 'react/jsx-runtime';
+import { JSX } from 'react/jsx-runtime';
 import { RefAttributes } from 'react';
 import * as TabsPrimitive from '@radix-ui/react-tabs';
 import { VariantProps } from 'class-variance-authority';
@@ -19,23 +19,8 @@ export declare const TabsTrigger: ForwardRefExoticComponent<Omit<TabsPrimitive.T
 export declare const TabsTriggerIcon: {
     ({ children, className, ...props }: React.HTMLAttributes<HTMLElement> & {
         children: React.ReactElement<Icon>;
-    }): JSX_2.Element;
+    }): JSX.Element;
     displayName: string;
 };
 
 export { }
-
-
-declare namespace Focusable {
-    var displayName: string;
-}
-
-
-declare namespace DatePicker {
-    var displayName: string;
-}
-
-
-declare namespace Calendar {
-    var displayName: string;
-}

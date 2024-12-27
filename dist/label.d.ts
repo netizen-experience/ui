@@ -9,18 +9,3 @@ export declare const Label: ForwardRefExoticComponent<Omit<LabelPrimitive.LabelP
 export declare const labelVariants: (props?: ClassProp | undefined) => string;
 
 export { }
-
-
-declare namespace Focusable {
-    var displayName: string;
-}
-
-
-declare namespace DatePicker {
-    var displayName: string;
-}
-
-
-declare namespace Calendar {
-    var displayName: string;
-}

@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { ForwardRefExoticComponent } from 'react';
 import { Icon } from '@phosphor-icons/react';
-import { JSX as JSX_2 } from 'react/jsx-runtime';
+import { JSX } from 'react/jsx-runtime';
 import { RefAttributes } from 'react';
 import * as SelectPrimitive from '@radix-ui/react-select';
 
@@ -18,7 +18,7 @@ export declare const SelectLabel: ForwardRefExoticComponent<Omit<SelectPrimitive
 export declare const SelectLeadingIcon: {
     ({ children, className, ...props }: React.HTMLAttributes<HTMLElement> & {
         children: React.ReactElement<Icon>;
-    }): JSX_2.Element;
+    }): JSX.Element;
     displayName: string;
 };
 
@@ -33,18 +33,3 @@ export declare const SelectTrigger: ForwardRefExoticComponent<Omit<SelectPrimiti
 export declare const SelectValue: ForwardRefExoticComponent<SelectPrimitive.SelectValueProps & RefAttributes<HTMLSpanElement>>;
 
 export { }
-
-
-declare namespace Focusable {
-    var displayName: string;
-}
-
-
-declare namespace DatePicker {
-    var displayName: string;
-}
-
-
-declare namespace Calendar {
-    var displayName: string;
-}
