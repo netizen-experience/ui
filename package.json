@@ -41,8 +41,8 @@
     "dev": "storybook dev -p 6006",
     "build:lib": "vite build",
     "build:storybook": "storybook build",
-    "build:infra": "env-cmd -- cdk synth --all",
-    "deploy:infra": "env-cmd -- cdk deploy --all"
+    "build:infra": "dotenvx run -- cdk synth --all",
+    "deploy:infra": "dotenvx run -- cdk deploy --all"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.1",
@@ -56,6 +56,7 @@
     "@commitlint/cli": "^19.6.1",
     "@commitlint/config-conventional": "^19.6.0",
     "@commitlint/cz-commitlint": "^19.6.1",
+    "@dotenvx/dotenvx": "^1.32.0",
     "@eslint/js": "^9.17.0",
     "@phosphor-icons/react": "^2.1.7",
     "@radix-ui/react-accordion": "^1.2.2",
@@ -97,7 +98,7 @@
     "aws-cdk-lib": "^2.173.3",
     "commitizen": "^4.3.1",
     "date-fns": "^4.1.0",
-    "env-cmd": "^10.1.0",
+    "dotenv": "^16.4.7",
     "eslint": "^9.17.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-import-resolver-typescript": "^3.7.0",
@@ -123,7 +124,8 @@
     "typescript": "^5.7.2",
     "typescript-eslint": "^8.18.2",
     "vite": "^6.0.5",
-    "vite-plugin-dts": "^4.4.0"
+    "vite-plugin-dts": "^4.4.0",
+    "zod": "^3.24.1"
   },
   "peerDependencies": {
     "@phosphor-icons/react": "^2.1.7",

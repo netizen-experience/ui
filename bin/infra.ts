@@ -1,17 +1,21 @@
 #!/usr/bin/env node
 
 import * as cdk from "aws-cdk-lib";
+import "dotenv/config";
 import { UiStack } from "./cdk/ui-stack";
+import { validateEnv } from "./env";
 
-// To ensure that it is targetting the correct account and region
-const region = process.env.AWS_REGION;
-const account = process.env.AWS_ACCOUNT_ID;
+const env = validateEnv(process.env);
 
-const app = new cdk.App();
+const profile = env.AWS_PROFILE;
+const region = env.AWS_REGION;
+const account = env.AWS_ACCOUNT_ID;
 
-if (process.env.AWS_PROFILE) console.log(`AWS_PROFILE: ${process.env.AWS_PROFILE}`);
+console.log(`AWS profile: ${profile}`);
 console.log(`CDK deployment account: ${account}`);
 console.log(`CDK deployment region : ${region}`);
 
-new UiStack(app, "NetizenUi");
-cdk.Tags.of(app).add("project", "netizen");
+const app = new cdk.App();
+
+new UiStack(app, "ui");
+if (env.PROJECT_TAG) cdk.Tags.of(app).add("project", env.PROJECT_TAG);
