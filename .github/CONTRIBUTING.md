@@ -1,6 +1,6 @@
 # Contributing to Netizen UI
 
-You are welcome to join the [DayPicker contributors](https://github.com/netizen-experience/ui/graphs/contributors) and help us build the best date picker for React.
+You are welcome to join the [Netizen UI contributors](https://github.com/netizen-experience/ui/graphs/contributors) and help us build the best date picker for React.
 
 ## Ways to contribute
 
