@@ -38,12 +38,10 @@ jobs:
         run: npm run build:storybook
 
       - name: Sync build output to S3
-        uses: jakejarvis/s3-sync-action
-        with:
-          args: --follow-symlinks --delete
         env:
           AWS_S3_BUCKET: ${{ vars.STORYBOOK_BUCKET }}
           AWS_ACCESS_KEY_ID: ${{ steps.creds.outputs.aws-access-key-id }}
           AWS_SECRET_ACCESS_KEY: ${{ steps.creds.outputs.aws-secret-access-key }}
           AWS_REGION: ${{ vars.AWS_REGION }}
-          SOURCE_DIR: storybook-static
+          SOURCE_DIR: ${{ vars.STORYBOOK_OUT_DIR }}
+        run: aws s3 sync $SOURCE_DIR s3://$AWS_S3_BUCKET --follow-symlinks --delete
