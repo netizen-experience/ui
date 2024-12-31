@@ -1,0 +1,43 @@
+name: Storybook workflow
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - name: Git clone repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+          cache: npm
+
+      - name: Configure AWS credentials
+        id: creds
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
+          role-session-name: githubactions-session
+          aws-region: ${{ vars.AWS_REGION }}
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build Storybook
+        run: npm run build:storybook
+
+      - name: Sync build output to S3
+        env:
+          SOURCE_DIR: ${{ vars.STORYBOOK_OUT_DIR }}
+          DESTINATION_BUCKET: ${{ vars.STORYBOOK_BUCKET }}
+        run: aws s3 sync $SOURCE_DIR s3://$DESTINATION_BUCKET --follow-symlinks --delete
