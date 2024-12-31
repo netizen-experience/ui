@@ -1,4 +1,6 @@
 # Ignore artifacts
+**/CODEOWNERS
+/cdk.out
 /dist
 /storybook-static
 package-lock.json
