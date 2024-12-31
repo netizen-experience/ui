@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 🙋 Get Help and Technical Support
+    url: https://github.com/netizen-experience/ui/discussions
+    about: Ask and answer questions in the GitHub discussions page
+  - name: 💡 Ideas and Feature requests
+    url: https://github.com/netizen-experience/ui/discussions/categories/ideas
+    about: Discuss and propose new features or improvements
