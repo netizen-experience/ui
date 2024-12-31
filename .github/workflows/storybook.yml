@@ -29,7 +29,6 @@ jobs:
           role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
           role-session-name: githubactions-session
           aws-region: ${{ vars.AWS_REGION }}
-          output-credentials: true
 
       - name: Install dependencies
         run: npm ci
@@ -39,9 +38,6 @@ jobs:
 
       - name: Sync build output to S3
         env:
-          AWS_S3_BUCKET: ${{ vars.STORYBOOK_BUCKET }}
-          AWS_ACCESS_KEY_ID: ${{ steps.creds.outputs.aws-access-key-id }}
-          AWS_SECRET_ACCESS_KEY: ${{ steps.creds.outputs.aws-secret-access-key }}
-          AWS_REGION: ${{ vars.AWS_REGION }}
           SOURCE_DIR: ${{ vars.STORYBOOK_OUT_DIR }}
-        run: aws s3 sync $SOURCE_DIR s3://$AWS_S3_BUCKET --follow-symlinks --delete
+          DESTINATION_BUCKET: ${{ vars.STORYBOOK_BUCKET }}
+        run: aws s3 sync $SOURCE_DIR s3://$DESTINATION_BUCKET --follow-symlinks --delete
