@@ -1,5 +1,5 @@
 ---
-name: "Documentation"
+name: "📚 Documentation"
 about: "Suggestions for Netizen UI documentation"
 ---
 
