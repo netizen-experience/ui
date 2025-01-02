@@ -6,6 +6,7 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
+*storybook.log
 
 node_modules
 *.local
@@ -26,6 +27,6 @@ node_modules
 **/.env*
 
 # Build files
-*storybook.log
-storybook-static
+dist
 cdk.out
+storybook-static
