@@ -30,7 +30,12 @@ export default {
   ],
   plugins: [
     del({ targets: "dist/*" }),
-    typescript({ tsconfig: "./tsconfig.lib.json", declaration: true, declarationDir: "dist" }),
+    typescript({
+      tsconfig: "./tsconfig.lib.json",
+      exclude: ["src/**/*.stories.{ts,tsx}"],
+      declaration: true,
+      declarationDir: "dist",
+    }),
     preserveDirectives(),
   ],
 };
