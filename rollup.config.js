@@ -35,6 +35,7 @@ export default {
       exclude: ["src/**/*.stories.{ts,tsx}"],
       declaration: true,
       declarationDir: "dist",
+      allowImportingTsExtensions: false,
     }),
     preserveDirectives(),
   ],
