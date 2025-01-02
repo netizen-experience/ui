@@ -1,6 +1,5 @@
 {
-  "name": "@netizen/ui",
-  "private": true,
+  "name": "@netizen-experience/ui",
   "version": "0.0.1",
   "description": "",
   "repository": {
