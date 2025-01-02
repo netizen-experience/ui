@@ -6,9 +6,5 @@
     }
   },
   "files": [],
-  "references": [
-    { "path": "./tsconfig.lib.json" },
-    { "path": "./tsconfig.node.json" },
-    { "path": "./tsconfig.infra.json" }
-  ]
+  "references": [{ "path": "./tsconfig.lib.json" }, { "path": "./tsconfig.infra.json" }]
 }
