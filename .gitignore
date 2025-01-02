@@ -26,6 +26,6 @@ node_modules
 **/.env*
 
 # Build files
-*storybook.log
-storybook-static
+dist
 cdk.out
+storybook-static
