@@ -29,6 +29,16 @@
       "types": "./dist/components/*.d.ts"
     }
   },
+  "typesVersions": {
+    "*": {
+      "utils": [
+        "dist/lib/utils.d.ts"
+      ],
+      "*": [
+        "dist/components/*.d.ts"
+      ]
+    }
+  },
   "scripts": {
     "prepare": "husky",
     "commit": "git-cz",
